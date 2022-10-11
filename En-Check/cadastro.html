@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastre-se</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/cad.css" />
+    <link rel="shortcut icon" href="./imagens/logo-pw.png" />
+  </head>
+
+  <body>
+    <nav id="menu-top">
+      <ul class="menu-top-lista">
+        <span>
+          <li class="items-menu-top" id="item-home">
+            <a class="top-link" href="inicial.html">EN-CHECK</a>
+          </li>
+        </span>
+
+        <span class="items-menu-direita">
+          <li class="items-menu-top" id="item-login">
+            <a class="top-link" href="login.html">LOGIN</a>
+          </li>
+        </span>
+      </ul>
+    </nav>
+
+    <div class="container-cadastro">
+      <div class="container-esquerda">
+        <img src="imagens/logo-pw.png" alt="En-check" class="logo-cadastro" />
+      </div>
+
+      <div class="container-direita">
+        <div class="container-direita-formulario">
+          <div class="header"><h1>Crie sua conta</h1></div>
+          <form
+            method="post"
+            id="formulario"
+            class="formulario"
+            action="./php/verificaDadosCadastro.php"
+          >
+            <div class="form-control">
+              <label for="nome">Nome</label>
+              <input
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Digite seu nome completo"
+                onblur="validaNome(this)"
+              />
+              <i>
+                <img class="img-success" src="./imagens/success-icon.svg" />
+              </i>
+              <i
+                ><img class="img-error" src="./imagens/error-icon.svg" alt=""
+              /></i>
+            </div>
+
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Digite seu email"
+                onblur="validaEmail(this)"
+              />
+              <i
+                ><img
+                  class="img-success"
+                  src="./imagens/success-icon.svg"
+                  alt=""
+              /></i>
+              <i
+                ><img class="img-error" src="./imagens/error-icon.svg" alt=""
+              /></i>
+            </div>
+
+            <div class="form-control">
+              <label for="senha">Senha</label>
+              <input
+                type="password"
+                name="senha"
+                id="senha"
+                placeholder="Digite sua senha"
+                onblur="validaSenha(this)"
+              />
+              <i
+                ><img
+                  class="img-success"
+                  src="./imagens/success-icon.svg"
+                  alt=""
+              /></i>
+              <i
+                ><img class="img-error" src="./imagens/error-icon.svg" alt=""
+              /></i>
+            </div>
+
+            <div class="form-control">
+              <label for="csenha">Confirma senha</label>
+              <input
+                type="password"
+                name="csenha"
+                id="csenha"
+                placeholder="Digite sua senha"
+                onblur="confirmaSenha(this)"
+              />
+              <i
+                ><img
+                  class="img-success"
+                  src="./imagens/success-icon.svg"
+                  alt=""
+              /></i>
+              <i
+                ><img class="img-error" src="./imagens/error-icon.svg" alt=""
+              /></i>
+            </div>
+
+            <div class="form-control">
+              <label for="cep">CEP</label>
+              <input
+                type="number"
+                name="cep"
+                id="cep"
+                placeholder="Digite seu CEP"
+                maxlength="8"
+              />
+              <i
+                ><img
+                  class="img-success"
+                  src="./imagens/success-icon.svg"
+                  alt=""
+              /></i>
+              <i
+                ><img class="img-error" src="./imagens/error-icon.svg" alt=""
+              /></i>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

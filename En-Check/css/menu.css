@@ -1,0 +1,46 @@
+#menu-top {
+  background-color: black;
+  /*    COR DE FUNDO DO MENU    */
+}
+#menu-top .menu-top-lista {
+  list-style: none;
+  padding: 0%;
+  /*
+    REMOVE A DECORAÇÃO DA LISTA
+    DEFINE O ESPAÇAMENTO INTERNO DA LISTA 
+    */
+}
+
+#menu-top .menu-top-lista .items-menu-top {
+  display: inline;
+  /*
+    MANTEM OS ITEMS NA "MESMA" LINHA
+    */
+}
+
+#menu-top .menu-top-lista .items-menu-top .top-link {
+  color: white;
+  padding: 20px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background 0.4s;
+
+  /*
+    DEFINE A COR DO TEXTO
+    DEFINE O ESPAÇO INTERNO DOS ITEMS
+    DEFINE A ORGANIZAÇÃO DOS ITEMS
+    REMOVE A DECORAÇÃO DOS LINKS
+    DEFINE O TEMPO DA TRANSIÇÃO AO PASSAR O MOUSE POR CIMA DOS ITEMS (min 1s, max 9s)
+    */
+}
+
+#menu-top .menu-top-lista .items-menu-top .top-link:hover {
+  background-color: #ca24d6;
+  /*
+    ALTERA A COR DOR ITEM NO MENU SUPERIOR QUANDO O MOUSE PASSA POR CIMA
+    */
+}
+
+.items-menu-direita {
+  float: right;
+}

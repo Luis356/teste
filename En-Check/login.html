@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/log.css" />
+    <link rel="shortcut icon" href="./imagens/logo-pw.png" />
+  </head>
+  <body>
+    <nav id="menu-top">
+      <ul class="menu-top-lista">
+        <span>
+          <li class="items-menu-top" id="item-home">
+            <a class="top-link" href="inicial.html">HOME</a>
+          </li>
+        </span>
+
+        <span class="items-menu-direita">
+          <li class="items-menu-top" id="item-login">
+            <a class="top-link" href="cadastro.html">CADASTRE-SE</a>
+          </li>
+        </span>
+      </ul>
+    </nav>
+
+    <div class="container-login">
+      <div class="login-esquerda">
+        <img src="imagens/logo-pw.png" alt="En-check" class="logo-login" />
+      </div>
+
+      <div class="login-direita">
+        <div class="container-direita-login">
+          <div class="header-login"><h1>Faça o login</h1></div>
+
+          <form class="form-login" action="./php/acessar.php" method="get">
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Digite seu email"
+              />
+            </div>
+            <div class="form-control">
+              <label for="senha">Senha</label>
+              <input
+                type="password"
+                name="senha"
+                id="senha"
+                placeholder="Digite sua senha"
+              />
+            </div>
+            <button>Acessar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

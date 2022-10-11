@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  width: 100vw;
+  background: linear-gradient(0deg, #020456 0%, #000000 90%);
+  height: 100vh;
+}
+
+.container-cadastro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7vh;
+}
+
+/*  ESQUERDA  */
+
+.container-esquerda {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo-cadastro {
+  height: 300px;
+  width: 300px;
+  /*filter: drop-shadow(4px 4px 7px white);*/
+  animation: mudaSombra 7s infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes mudaSombra {
+  0% {
+    filter: drop-shadow(4px 4px 7px white);
+  }
+/*
+  30% {
+    filter: drop-shadow(4px 4px 7px yellow);
+
+  }
+*/
+  50% {
+    filter: drop-shadow(4px 4px 7px yellow);
+  }
+
+  /*70% {
+    filter: drop-shadow(4px 4px 7px green);
+  }*/
+
+  100% {
+    filter: drop-shadow(4px 4px 7px white);
+  }
+}
+
+/*  DIREITA   */
+
+.container-direita {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.container-direita-formulario {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 100%;
+  overflow: hidden;
+  color: white;
+  margin: 25px;
+}
+
+.header {
+  background-color: #1c1c1c;
+  padding: 10px 20px;
+}
+
+.formulario {
+  padding: 10px 20px;
+}
+
+.form-control {
+  margin-bottom: 5px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  padding: 5px;
+}
+
+.formulario button {
+  background-color: #fc00ff;
+  border: 2px solid #000000;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  /*
+    Remove as "setas" do input number, nos navegadores: Chrome, Safari, Edge, Opera.
+    */
+}
+
+.form-control.success input {
+  border: 3px solid #4eca64;
+}
+
+.form-control.error input {
+  border: 3px solid #db5a5a;
+}
+
+.form-control.error i .img-error {
+  visibility: visible;
+}
+
+.form-control.success i .img-success {
+  visibility: visible;
+}
+
+.form-control.error small {
+  color: #db5a5a;
+  visibility: visible;
+}
+
+.form-control i {
+  position: absolute;
+  top: 33px;
+  right: 10px;
+  visibility: hidden;
+}
