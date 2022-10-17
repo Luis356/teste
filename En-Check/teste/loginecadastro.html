@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="teste.css" />
+    <title>Entrar</title>
+  </head>
+  <body>
+    <div class="conteudo">
+      <!--  FORMULARIO DE LOGIN     -->
+      <div id="login">
+        <form action="#" method="post">
+          <h1 class="titulos">login</h1>
+
+          <p class="paragrafos">
+            <label for="nome_login">Nome</label>
+            <input
+              type="text"
+              name="nome_login"
+              id="nome_login"
+              placeholder="Seu nome"
+            />
+          </p>
+
+          <p class="paragrafos">
+            <label for="senha_login">Senha</label>
+            <input
+              type="password"
+              name="senha_login"
+              id="senha_login"
+              placeholder="Sua senha"
+            />
+          </p>
+
+          <p class="paragrafos">
+            <input type="checkbox" name="manterlogado" id="manterlogado" />
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+
+          <p class="paragrafos">
+            <input type="submit" value="Entrar" />
+          </p>
+
+          <p class="link">
+            Ainda não tem conta?
+            <a href="#paracadastro">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+
+      <!--    FORMULARIO DE CADASTRO      -->
+
+      <div id="cadastro">
+        <form action="#" method="post">
+          <hi class="titulos">Cadastro</hi>
+
+          <p class="paragrafos">
+            <label for="nome_cadastro">Nome</label>
+            <input
+              type="text"
+              name="nome_cadastro"
+              id="nome_cadastro"
+              placeholder="Nome completo"
+            />
+          </p>
+
+          <p class="paragrafos">
+            <label for="email_cadastro">Email</label>
+            <input
+              type="email"
+              name="email_cadastro"
+              id="email_cadastro"
+              placeholder="Seu email"
+            />
+          </p>
+
+          <p class="paragrafos">
+            <label for="senha_cadastro">Senha</label>
+            <input
+              type="password"
+              name="senha_cadastro"
+              id="senha_cadastro"
+              placeholder="Sua senha"
+            />
+          </p>
+
+          <p class="paragrafos">
+            <input type="submit" value="Cadastro" />
+          </p>
+
+          <p class="link">
+            Já tem conta?
+            <a href="#paralogin">Ir para Login</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
